@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>🍔 Chibib's Burgers 🍔</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.PNG" type="image/png">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="index.html" class="navbar-brand">Chibib's Burgers</a>
+            <button class="navbar-toggler" type='button' data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="menu.html" class="nav-link active">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.google.com/maps/search/chibib+burgers" target="_blank" class="nav-link">Locations</a>
+                    </li>
+                </ul>
+                <form class='form-inline my-2 my-md-1' id="locationForm" onsubmit="search()">
+                    <input type="text" placeholder="Search for locations" class="form-control mr-sm-2" id="locationsearch">
+                    <button type="submit" class="btn btn-outline-success my-2">Search</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="text-center">Menu</h1>
+        <div class="container">
+            <div class="menu-container text-center row">
+                <div class="col-md-4 col-sm-6 my-sm-3">
+                    <img src="images/menu/burger1.jpg" alt="burger1" class="menu-image">
+                    <p>Regular Burger</p>
+                    <p><button class="btn btn-secondary" data-toggle="modal" data-target="#regular">View details &raquo;</button></p>
+                </div>
+    
+                <div class="col-md-4 col-sm-6 my-sm-3">
+                    <img src="images/menu/burger2.jpg" alt="burger2" class="menu-image">
+                    <p>Premium Burger</p>
+                    <p><button class="btn btn-secondary" data-toggle="modal" data-target="#premium">View details &raquo;</button></p>
+                </div>
+    
+                <div class="col-md-4 col-sm-6 my-sm-3">
+                    <img src="images/menu/burger3.jpg" alt="burger3" class="menu-image">
+                    <p>Ultra Gourmet Burger</p>
+                    <p><button class="btn btn-secondary" data-toggle="modal" data-target="#ultra-gourmet">View details &raquo;</button></p>
+                </div>
+    
+                <div class="col-md-4 col-sm-6 my-sm-3">
+                    <img src="images/menu/burger4.jpg" alt="burger4" class="menu-image">
+                    <p>Chibib Special</p>
+                    <p><button class="btn btn-secondary" data-toggle="modal" data-target="#chibib-special">View details &raquo;</button></p>
+                </div>
+    
+                <div class="col-md-4 col-sm-6 my-sm-3">
+                    <img src="images/menu/burger5.jpg" alt="burger5" class="menu-image">
+                    <p>Impossible Chibib Special</p>
+                    <p><button class="btn btn-secondary" data-toggle="modal" data-target="#impossible-chibib-special">View details &raquo;</button></p>
+                </div>
+    
+                <div class="col-md-4 col-sm-6 my-sm-3">
+                    <img src="images/menu/burger6.jpg" alt="burger6" class="menu-image">
+                    <p>Award Winning Chibio Twist</p>
+                    <p><button class="btn btn-secondary" data-toggle="modal" data-target="#chibio-twist">View details &raquo;</button></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal fade modal-fullscreen" id="regular">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span role="button" class="back-close" data-dismiss="modal">&#8592;</span>
+                </div>
+                <div class="modal-body">
+                    <h2 class="pb-2 text-center">Regular Burger</h2>
+                    <div class="container row text-center">
+                        <div class="col-md-5">
+                            <img src="images/menu/burger1.jpg" class="modal-image" alt="burger1">
+                        </div>
+                        <div class="col-md-7">
+                            <h3>$9.99</h3>
+                            <p>This burger is a very premium burger for the price. Made with fresh ingredients from India to Germany. We have harnessed our inner selves when making this affodable yet gourmet burger. We hope you enjoy it.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-fullscreen" id="premium">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span role="button" class="back-close" data-dismiss="modal">&#8592;</span>
+                </div>
+                <div class="modal-body">
+                    <h2 class="pb-2 text-center">Premium Burger</h2>
+                    <div class="container row text-center">
+                        <div class="col-md-5">
+                            <img src="images/menu/burger2.jpg" class="modal-image" alt="burger2">
+                        </div>
+                        <div class="col-md-7">
+                            <h3>$14.99</h3>
+                            <p>The Chibib Premium Burger is the best price-to-gourmet ratio in all burgers around the world. Cooks around the world guess this burger is around 30 dollars, due to its high use in spices and its fresh, grilled meat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-fullscreen" id="ultra-gourmet">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span role="button" class="back-close" data-dismiss="modal">&#8592;</span>
+                </div>
+                <div class="modal-body">
+                    <h2 class="pb-2 text-center">Chibib Ultra Gourmet Burger</h2>
+                    <div class="container row text-center">
+                        <div class="col-md-5">
+                            <img src="images/menu/burger3.jpg" class="modal-image" alt="burger3">
+                        </div>
+                        <div class="col-md-7">
+                            <h3>$25.00</h3>
+                            <p>This is the most gourmet burger in our menu. With ingredients all the way from Thailand, to Brazil, this burger is worth the price. The burger takes about 6 hours to complete, and tastes, what experts describe as, the most high-quality burger they have ever tasted. This burger is our most popular burger amongst high-class individuals, and earned us the record of most gourmet burger shop back in 2018.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-fullscreen" id="chibib-special">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span role="button" class="back-close" data-dismiss="modal">&#8592;</span>
+                </div>
+                <div class="modal-body">
+                    <h2 class="pb-2 text-center">Chibib Special</h2>
+                    <div class="container row text-center">
+                        <div class="col-md-5">
+                            <img src="images/menu/burger4.jpg" class="modal-image" alt="burger4">
+                        </div>
+                        <div class="col-md-7">
+                            <h3>$19.99</h3>
+                            <p>The Chibib Special was Chibib's most popular burger back in 1393 CE. It kept being very popular until Chibib changed her company to be souly burgers in 1824. It is one of the most beloved burgers in Chibib's restaurant, with Chibib hand-making the burgers every few months. Today, the recipe remains a secret that only Chibib and her most trusted chefs know.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-fullscreen" id="impossible-chibib-special">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span role="button" class="back-close" data-dismiss="modal">&#8592;</span>
+                </div>
+                <div class="modal-body">
+                    <h2 class="pb-2 text-center">Impossible Chibib Special</h2>
+                    <div class="container row text-center">
+                        <div class="col-md-5">
+                            <img src="images/menu/burger5.jpg" class="modal-image" alt="burger5">
+                        </div>
+                        <div class="col-md-7">
+                            <h3>$25.00</h3>
+                            <p>This burger is the Chibib Special but instead of meat, it uses a plant-based substance to substitute it. This "meat" tastes exactly like the patty from the original Chibib Special. This is the Vegan meal of Chibib's Burgers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade modal-fullscreen" id="chibio-twist">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span role="button" class="back-close" data-dismiss="modal">&#8592;</span>
+                </div>
+                <div class="modal-body">
+                    <h2 class="pb-2 text-center">Award Winning Chibio Twist</h2>
+                    <div class="container row text-center">
+                        <div class="col-md-5">
+                            <img src="images/menu/burger6.jpg" class="modal-image" alt="burger6">
+                        </div>
+                        <div class="col-md-7">
+                            <h3>$30.00</h3>
+                            <p>The Chibio Twist won the award for best burger of the year in 2020. This burger proves to be better than any other burger in the world. The burger is made from the freshest and finest ingredients only, and comes with plant-based meat to make it vegan friendly. Proffesional chef Gordon Ramsay wrote: "I can't believe this burger. It tastes like if dreams came true." This burger is the best burger we offer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-dark pt-5">
+        <div class="row text-center">
+            <div class="col-md-7 text-light">
+                <h3>Sign up for exclusive offers and deals!</h3>
+            </div>
+            <div class="col-md-5">
+                <button id="modalbutton" type="button" class="btn btn-success" data-toggle="modal" data-target="#signupmodal">Sign up now!</button>
+            </div>
+        </div>
+    </div>
+
+    <!--modal-->
+    <div class="modal fade" id="signupmodal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Sign up for exclusive offers and deals!</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <form onsubmit="submitform('signup'); event.preventDefault()">
+                <div class="modal-body">
+                        <div class="form-group">
+                            <label for="nameInput">Your full name:</label>
+                            <input required type="text" class="form-control" id="nameInput" placeholder="Enter you name">
+                        </div>
+                        <div class="form-group">
+                            <label for="emailInput">Your email:</label>
+                            <input required id="emailInput"
+                            class="form-control" type="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-gorup">
+                            <label for="address">Your address:</label>
+                            <textarea required id="address" cols="3"  class="form-control" placeholder="Enter you address"></textarea>
+                        </div>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" id="emailCheck" class="form-check-input" value="email">
+                        <label for="emailCheck" class="form-check-label">Contact by email</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="checkbox" id="postCheck" class="form-check-input" value="post">
+                        <label for="postCheck" class="form-check-label">Contact by post</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input required type="checkbox" id="terms" class="form-check-input" value="termsagree">
+                        <label for="terms" class="form-check-label">I agree to the <a href="termsandconditions.txt" target="_blank">Terms and Conditions</a></label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+            </div>
+        </div>        
+    </div>
+
+    <div class="modal fade" id="thank-you-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Thank you for submitting</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p id="submit-text"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid text-light bg-dark py-4">
+        <div class="text-center">
+            <h3>Order online now by using the free app!</h3>
+            <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank"><img src="images/Download_on_the_App_Store_Badge.svg.png" alt="get it on App_Store_Badge" class="downloadimage"></a>
+            <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank"><img src="images/640px-Google_Play_Store_badge_EN.svg.webp" alt="get it on play store" class="downloadimage"></a>
+        </div>
+        <p class="float-right"><a class="backtotop" href='#'>
+            <span class="sr-only">Back to top</span>
+            <span class="fa fa-arrow-up"></span>
+        </a></p>
+        <p class="footer-text">&copy; 2022 Chibib's Burgers &middot;
+        <a href="index.html">Home</a> &middot;
+        <a href="menu.html">Menu</a> &middot;
+        <a href="about.html">About us</a> &middot;
+        <a href="https://www.google.com/maps/search/chibib+burgers" target="_blank">Locations</a>
+        </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</body>
+</html>

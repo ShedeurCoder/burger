@@ -1,0 +1,72 @@
+.col-md-4 > img {
+    width: 140px;
+    height: 140px;
+}
+#modalbutton {
+    font-size: 1.5rem;
+}
+ p {
+    font-size: 1.3rem;
+}
+html {
+    scroll-behavior: smooth;
+}
+.backtotop {
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255, 0.7);
+}
+.footer-text a {
+    color: rgb(255, 255, 255, 0.7);
+}
+.footer-text a:hover {
+    color: rgb(255, 255, 255);
+}
+input[type='checkbox'] {
+    cursor: pointer;
+}
+.modal-footer label {
+    cursor: pointer;
+}
+.chibib-image {
+    width: 30%
+}
+.founder::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.founder {
+    overflow: auto;
+}
+.modal.modal-fullscreen .modal-dialog {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    max-width: none; 
+  }
+  
+  .modal.modal-fullscreen .modal-content {
+    height: auto;
+    height: 100vh;
+    border-radius: 0;
+    border: none; 
+  }
+  
+  .modal.modal-fullscreen .modal-body {
+    overflow-y: auto; 
+  }
+.menu-photo {
+    width: 140px;
+    height: 140px;
+}
+.back-close {
+    font-size: 3rem;
+}
+.modal-image {
+    width: 90%;
+}
+.downloadimage {
+    width: 200px;
+    margin-bottom: 2%;
+}
